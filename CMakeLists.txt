@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.13)
 
+set (CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS} -Xcompiler -mno-float128")
+
 project(SPUTNIK CUDA CXX C)
 
 cmake_policy(SET CMP0104 OLD)
